@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+
+<!--
+    Enlaces: Conectan una página web con otra, con un recurso tanto interno como externo, o con otro sitio web.
+
+    Atributo obligatorio 'href', donde le especificamos la ruta del recurso o sitio que queremos obtener.
+
+    También tiene el atributo 'target', que configura cómo queremos visualizar el recurso o sitio que solicitamos.
+
+    Rutas absolutas:
+        Tienen un protocolo, http o https y son únicas en la red.
+        Se suelen utilizar para rutas externas.
+
+    Rutas relativas:
+        Pueden ser relativas al punto donde nos encontramos o relativas a la raiz del proyecto.
+
+        No usan protocolo
+
+        Si el recurso se encuentra al mismo nivel (en la misma carpeta) pondremos únicamente el nombre del archivo.
+
+        Si necesitamos salir de la carpeta actual usaremos '../' y se pone uno por cada nivel (carpeta) de la que queramos salir.
+
+    Atributos de los enlaces
+        target: define dónde se abrirá el recurso solicitado. Por norma general siempre que useis rutas absolutas pondréis como valor "_blank" -> Se abre en una pestaña nueva.
+        El valor por defecto es "_self" (es como no opner nada)
+
+        dowload: Atributo booleano, sirve para descargar el recurso solicitado. (En lugar de abrir la página)
+        IMPORTANTE, el recurso debe estar en tu mismo servidor.
+        (No podemos descargar un HTML de otro servidor, por ejemplo un enlace absoluto como 'https://google.com').
+-->
+
+    <h1>Home</h1>
+    <nav> <!-- IMPORTANTE poner el id y el # -->
+        <p><a href="/paginas/blog.html#post-1">Post 1</a></p>
+        <p><a href="/paginas/blog.html#post-2">Post 2</a></p>
+        <p><a href="/paginas/blog.html#post-3">Post 3</a></p>
+        <p><a href="/paginas/blog.html#post-4">Post 4</a></p>
+        <p><a href="/paginas/blog.html#post-5">Post 5</a></p>
+    </nav>
+    <a href="/paginas/blog.html">Ir al blog</a>
+
+    <!-- <a href="paginas/contacto.html">Ir a contacto</a> -->
+
+    <!-- <a href="google.com">Ir a google</a>
+        // Esto daría error, ya que para que el navegador entienda que se trata de una ruta externa o absoluta debemos poner 'https://'-->
+    <!-- <a href="https://google.com">Ir a google</a> -->
+
+    <!-- <a href="/repaso-html/web-demo/assets/images/gato.jpg" download="">Descargar gato</a> -->
+
+</body>
+</html>
